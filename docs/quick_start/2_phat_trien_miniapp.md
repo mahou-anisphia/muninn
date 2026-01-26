@@ -53,35 +53,6 @@ Hiện tại chỉ có boilerplate cho **React**. Vue và Angular sẽ được 
 
 ![Miniapp Running on Android](./img/emulator_results.png)
 
-```mermaid
-%%{init: {
-  'theme': 'base',
-  'themeVariables': {
-    'primaryColor': '#EE0033',
-    'primaryTextColor': '#000000',
-    'lineColor': '#44494D',
-    'tertiaryColor': '#F2F2F2'
-  }
-}}%%
-flowchart LR
-    subgraph Dev["Máy phát triển"]
-        VSCode["VSCode +<br/>Extension"]
-        Browser["Browser<br/>(Preview)"]
-    end
-
-    subgraph Android["Thiết bị Android"]
-        App["Miniapp<br/>Container"]
-    end
-
-    VSCode -->|"1. Run Preview"| Browser
-    Browser -->|"2. Copy URL"| VSCode
-    VSCode -->|"3. Preview on Android"| App
-
-    style VSCode fill:#EE0033,color:#FFFFFF
-    style Browser fill:#FFFFFF,stroke:#EE0033,color:#000000
-    style App fill:#EE0033,color:#FFFFFF
-```
-
 :::warning Bridge API chỉ hoạt động trên thiết bị mobile (iOS / Android)
 Trên browser, bạn **không thể** gọi Bridge API (jsAPI) vì không có native layer. Các tính năng như camera, GPS, storage... chỉ hoạt động khi preview trên thiết bị mobile (iOS / Android) thật hoặc emulator.
 :::

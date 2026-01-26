@@ -1,21 +1,15 @@
----
-sidebar_position: 1
----
+## Thiết lập môi trường
 
-# Thiết lập môi trường
+### 1. Cài đặt Node.js
 
 Tải và cài đặt Node.js phiên bản LTS từ [nodejs.org](https://nodejs.org).
 
-Sau khi cài đặt, kiểm tra bằng terminal nhw sau:
-
-Phiên bản nodejs
+Sau khi cài đặt, kiểm tra bằng terminal:
 
 ```bash title="Terminal"
 node --version
 # v18.x.x hoặc cao hơn
 ```
-
-Phiên bản npm
 
 ```bash title="Terminal"
 npm --version
@@ -26,7 +20,7 @@ npm --version
 Miniapp **chỉ hỗ trợ npm** làm package manager. Không sử dụng yarn, pnpm hay bun để cài đặt dependencies.
 :::
 
-## 2. Cài đặt Miniapp Extension
+### 2. Cài đặt Miniapp Extension
 
 Cài đặt **Miniapp Extension** của Viettel trong VSCode:
 
@@ -41,7 +35,7 @@ Cài đặt **Miniapp Extension** của Viettel trong VSCode:
 Extension sẽ yêu cầu đăng nhập, nhưng **phát triển local không cần đăng nhập**. Bạn có thể bỏ qua popup và tiếp tục sử dụng.
 :::
 
-## 3. Cấu hình Extension
+### 3. Cấu hình Extension
 
 Để sử dụng các tính năng như **Emulator** và **mở Miniapp trên thiết bị Android vật lý**, bạn cần cấu hình đường dẫn phù hợp với hệ điều hành:
 
@@ -60,7 +54,7 @@ Extension sẽ yêu cầu đăng nhập, nhưng **phát triển local không c�
 Đường dẫn có thể khác tùy vào vị trí cài đặt Android SDK trên máy của bạn. Nếu bạn cài đặt Android Studio với cấu hình mặc định, các đường dẫn trên sẽ chính xác.
 :::
 
-## 4. Chuẩn bị thiết bị Android
+### 4. Chuẩn bị thiết bị Android
 
 Bạn cần một trong hai:
 
@@ -69,7 +63,7 @@ Bạn cần một trong hai:
 | **Thiết bị thật**    | Kết nối qua USB, bật **USB Debugging** trong Developer Options |
 | **Android Emulator** | Sử dụng Android Studio Emulator hoặc công cụ tương tự          |
 
-## Framework được hỗ trợ
+### Framework được hỗ trợ
 
 | Hỗ trợ đầy đủ | Hỗ trợ có giới hạn         |
 | ------------- | -------------------------- |
@@ -80,7 +74,3 @@ Bạn cần một trong hai:
 :::info Tại sao có giới hạn?
 Miniapp là **SPA tĩnh** chạy trong sandbox. Các framework yêu cầu server-side rendering (SSR) cần chuyển sang client-side mode để tương thích.
 :::
-
-## Tiếp theo
-
-Môi trường đã sẵn sàng. Tiếp tục với [Phát triển Miniapp](./phat_trien_miniapp) để tạo miniapp đầu tiên.

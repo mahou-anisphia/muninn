@@ -2,7 +2,9 @@
 sidebar_position: 3
 ---
 
-# Bridge API (jsAPI) và Sample Code
+import HoTro from '../_shared/_ho_tro.mdx';
+
+# Bridge API (jsAPI)
 
 ## Bridge API cho phép bạn làm gì?
 
@@ -51,6 +53,22 @@ flowchart TD
 2. Bridge chuyển request sang native layer
 3. Native thực thi (yêu cầu quyền nếu cần)
 4. Kết quả trả về qua callback `success` hoặc `fail`
+
+## Giới hạn kỹ thuật của Bridge API
+
+Bridge API mạnh mẽ nhưng **không phải là native app**. Một số giới hạn cần lưu ý:
+
+| Giới hạn                    | Giải thích                         | Giải pháp                                    |
+| --------------------------- | ---------------------------------- | -------------------------------------------- |
+| **Không chạy background**   | Miniapp dừng khi người dùng thoát  | Sử dụng backend để xử lý tác vụ dài hạn      |
+| **Không push notification** | Không thể gửi thông báo chủ động   | Dùng superapp notification API (qua backend) |
+| **Giới hạn memory**         | ~100MB RAM                         | Tối ưu code, tránh memory leak               |
+| **Giới hạn bundle size**    | 2MB (khuyến nghị)                  | Code splitting, lazy loading                 |
+| **Quyền hạn hạn chế**       | Chỉ truy cập qua API đã được duyệt | Không thể yêu cầu quyền tùy ý như native app |
+
+:::info Tại sao có giới hạn này?
+Miniapp chạy trong **sandbox** để đảm bảo bảo mật và ổn định. Mọi tương tác với thiết bị đều phải đi qua lớp kiểm soát của superapp. Đây là trade-off giữa **bảo mật** và **tính năng**.
+:::
 
 ## Trường hợp đặc biệt: SDK Integration
 
@@ -108,13 +126,12 @@ npm start
 
 ## Tiếp theo
 
-- **Chi tiết từng API**: Xem [Tài liệu jsAPI](../jsapi/) để tìm hiểu tham số, quyền yêu cầu, và use case
-- **Bắt đầu phát triển**: Xem [Quick Start](../quick_start/index) để chạy miniapp đầu tiên
-- **Tích hợp SSO**: Xem [Cơ chế SSO](../sso/) để hiểu luồng xác thực người dùng
+**Chưa chắc cần Bridge API?** Xem [Lựa chọn phương thức tích hợp](./lua_chon_tich_hop) để so sánh các phương án phù hợp với nhu cầu của bạn.
 
-## Hỗ trợ
+**Đã quyết định dùng Bridge API?** Tiếp tục với:
 
-| Mảng         | Đầu mối      | Email                 |
-| ------------ | ------------ | --------------------- |
-| Backend, SSO | Hà Anh Vũ    | vuha13@viettel.com.vn |
-| Android      | Kiều Văn Bảo | baokv2@viettel.com.vn |
+- **Chi tiết từng API**: [Tài liệu jsAPI](../jsapi/) - tham số, quyền yêu cầu, use case
+- **Bắt đầu phát triển**: [Quick Start](../quick_start/index) - chạy miniapp đầu tiên với boilerplate
+- **Tích hợp SSO**: [Cơ chế SSO](../sso/) - luồng xác thực người dùng
+
+<HoTro />

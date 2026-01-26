@@ -109,7 +109,7 @@ npm start
 ## Tiếp theo
 
 - **Chi tiết từng API**: Xem [Tài liệu jsAPI](../jsapi/) để tìm hiểu tham số, quyền yêu cầu, và use case
-- **Bắt đầu phát triển**: Xem [Quick Start](../quick_start/) để chạy miniapp đầu tiên
+- **Bắt đầu phát triển**: Xem [Quick Start](../quick_start/index) để chạy miniapp đầu tiên
 - **Tích hợp SSO**: Xem [Cơ chế SSO](../sso/) để hiểu luồng xác thực người dùng
 
 ## Hỗ trợ

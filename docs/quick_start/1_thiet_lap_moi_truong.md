@@ -35,13 +35,32 @@ Cài đặt **Miniapp Extension** của Viettel trong VSCode:
 3. Tìm kiếm "Miniapp Viettel"
 4. Nhấn **Install**
 
-![Miniapp Extension trong VSCode](./img/placeholder-extension-install.svg)
+![Miniapp Extension trong VSCode](./img/extension_install.png)
 
 :::tip Không cần đăng nhập
 Extension sẽ yêu cầu đăng nhập, nhưng **phát triển local không cần đăng nhập**. Bạn có thể bỏ qua popup và tiếp tục sử dụng.
 :::
 
-## 3. Chuẩn bị thiết bị Android
+## 3. Cấu hình Extension
+
+Để sử dụng các tính năng như **Emulator** và **mở Miniapp trên thiết bị Android vật lý**, bạn cần cấu hình đường dẫn phù hợp với hệ điều hành:
+
+1. Mở **Settings** trong VSCode (Ctrl+,)
+2. Tìm kiếm "Viettel"
+3. Điền các đường dẫn tương ứng với hệ điều hành của bạn:
+
+![Cấu hình Extension Settings](./img/extension_setting.png)
+
+| Cài đặt           | Windows                                                                | macOS/Linux                        |
+| ----------------- | ---------------------------------------------------------------------- | ---------------------------------- |
+| **ADB Path**      | `C:\Users\<username>\AppData\Local\Android\Sdk\platform-tools\adb.exe` | `~/Android/Sdk/platform-tools/adb` |
+| **Emulator Path** | `C:\Users\<username>\AppData\Local\Android\Sdk\emulator\emulator.exe`  | `~/Android/Sdk/emulator/emulator`  |
+
+:::info Lưu ý
+Đường dẫn có thể khác tùy vào vị trí cài đặt Android SDK trên máy của bạn. Nếu bạn cài đặt Android Studio với cấu hình mặc định, các đường dẫn trên sẽ chính xác.
+:::
+
+## 4. Chuẩn bị thiết bị Android
 
 Bạn cần một trong hai:
 

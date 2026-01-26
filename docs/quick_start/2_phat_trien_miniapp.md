@@ -28,15 +28,15 @@ npm install
 Hiện tại chỉ có boilerplate cho **React**. Vue và Angular sẽ được bổ sung sau.
 :::
 
-## Bước 2: Preview trên browser
+## Bước 2: Preview trên VSCode
 
 1. Mở project trong VSCode
 2. Mở **Miniapp Extension** từ sidebar
-3. Chọn **Run Preview in Browser**
+3. Chọn **Run Preview in VSCode**
 
-![Miniapp Extension panel](./img/placeholder-extension-panel.svg)
+![Miniapp Extension panel](./img/preview_vsc.png)
 
-4. Browser sẽ mở với miniapp đang chạy
+4. Khi được hỏi "is your miniapp started", chọn **NO**. Browser sẽ mở với miniapp đang chạy
 5. **Copy URL** trên thanh địa chỉ browser (sẽ dùng ở bước sau)
 
 ## Bước 3: Preview trên Android
@@ -45,17 +45,13 @@ Hiện tại chỉ có boilerplate cho **React**. Vue và Angular sẽ được 
 
 1. Trong **Miniapp Extension**, chọn **Preview on Android Device/Emulator**
 
-![Menu preview Android](./img/placeholder-menu-preview.svg)
+2. Khi được hỏi _"Enter miniapp URL"_, **paste URL** đã copy từ browser
 
-2. Khi được hỏi _"Is the miniapp running?"_, chọn **Yes**
+![Menu preview Android](./img/preview_emulator.png)
 
-![Dialog xác nhận](./img/placeholder-dialog-confirm.svg)
+3. Miniapp sẽ được load trên thiết bị Android
 
-3. Khi được hỏi _"Enter miniapp URL"_, **paste URL** đã copy từ browser
-
-![Input URL](./img/placeholder-input-url.svg)
-
-4. Miniapp sẽ được load trên thiết bị Android
+![Miniapp Running on Android](./img/emulator_results.png)
 
 ```mermaid
 %%{init: {

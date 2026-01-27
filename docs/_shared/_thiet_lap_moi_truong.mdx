@@ -65,12 +65,18 @@ Bạn cần một trong hai:
 
 ### Framework được hỗ trợ
 
-| Hỗ trợ đầy đủ | Hỗ trợ có giới hạn         |
-| ------------- | -------------------------- |
-| React         | Next.js (Client-side mode) |
-| Vue           | Nuxt (Client-side mode)    |
-| Web H5 thuần  | Angular                    |
+**Có hỗ trợ:**
 
-:::info Tại sao có giới hạn?
-Miniapp là **SPA tĩnh** chạy trong sandbox. Các framework yêu cầu server-side rendering (SSR) cần chuyển sang client-side mode để tương thích.
+- **React** - Khuyên dùng
+- **Vue**
+- **Web H5 thuần** (HTML/CSS/JS)
+
+**Proceed with your own risk:**
+
+- **Next.js** - Chỉ hỗ trợ client-side mode (`output: 'export'`)
+- **Nuxt** - Chỉ hỗ trợ client-side mode (`ssr: false`)
+- **Angular** - Chưa được kiểm thử đầy đủ
+
+:::warning Tại sao "proceed with your own risk"?
+Miniapp là **SPA tĩnh** chạy trong sandbox, không có server. Các framework yêu cầu SSR (Server-Side Rendering) phải tắt SSR và chuyển sang static export. Chúng tôi không đảm bảo hỗ trợ cho các framework này.
 :::

@@ -3,9 +3,9 @@ sidebar_position: 0
 id: index
 ---
 
-# Chuyển đổi SPA thành Miniapp
+# B. Chuyển đổi SPA
 
-Mục này hướng dẫn bạn cách chuyển đổi một **Single-Page Application (SPA)** có sẵn thành miniapp chạy trên Tammi Superapp.
+Hướng dẫn này giúp bạn chuyển đổi một **Single-Page Application (SPA)** có sẵn thành miniapp chạy trên Tammi Superapp.
 
 :::info Phạm vi hướng dẫn
 Hướng dẫn này tập trung vào việc **chuyển đổi và preview miniapp trên local**. Quy trình deploy lên Tammi Superapp yêu cầu tài khoản và sẽ được đề cập trong phần riêng.

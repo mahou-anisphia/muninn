@@ -3,9 +3,9 @@ sidebar_position: 0
 id: index
 ---
 
-# Quick Start
+# C. Tích hợp Webview
 
-Mục này hướng dẫn bạn chạy miniapp Tammi trên thiết bị Android, đồng thời trải nghiệm các tính năng native thông qua Bridge API (jsAPI).
+Hướng dẫn này giúp bạn nhúng website có sẵn vào miniapp thông qua webview.
 
 :::info Phạm vi hướng dẫn
 Hướng dẫn này tập trung vào việc **phát triển và preview miniapp trên local**. Quy trình deploy lên Tammi Superapp yêu cầu tài khoản và sẽ được đề cập trong phần riêng.
@@ -26,8 +26,8 @@ Hướng dẫn này tập trung vào việc **phát triển và preview miniapp 
   }
 }}%%
 flowchart LR
-    A["1. Thiết lập<br/>môi trường"] --> B["2. Clone<br/>boilerplate"]
-    B --> C["3. Preview<br/>trên browser"]
+    A["1. Thiết lập<br/>môi trường"] --> B["2. Khởi tạo<br/>Miniapp"]
+    B --> C["3. Thiết lập<br/>Webview"]
     C --> D["4. Preview<br/>trên Android"]
 
     style A fill:#EE0033,color:#FFFFFF
@@ -38,12 +38,12 @@ flowchart LR
 
 ## Bạn sẽ cần
 
-| Yêu cầu | Mô tả |
-|---------|-------|
-| **Node.js** | Phiên bản LTS (kiểm tra: `node --version`) |
-| **npm** | Đi kèm Node.js (kiểm tra: `npm --version`) |
-| **VSCode Extension** | Miniapp Extension của Viettel |
-| **Android** | Thiết bị thật hoặc emulator |
+| Yêu cầu              | Mô tả                                      |
+| -------------------- | ------------------------------------------ |
+| **Node.js**          | Phiên bản LTS (kiểm tra: `node --version`) |
+| **npm**              | Đi kèm Node.js (kiểm tra: `npm --version`) |
+| **VSCode Extension** | Miniapp Extension của Viettel              |
+| **Android**          | Thiết bị thật hoặc emulator                |
 
 ## Bắt đầu
 

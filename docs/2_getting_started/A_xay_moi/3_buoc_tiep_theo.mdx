@@ -1,0 +1,54 @@
+---
+sidebar_position: 3
+---
+
+import HoTro from "../../_shared/_ho_tro.mdx";
+
+# Bước tiếp theo
+
+Bạn đã chạy thành công miniapp đầu tiên. Dưới đây là các hướng đi tiếp theo.
+
+## Sample code với đầy đủ Bridge API
+
+Chúng tôi cung cấp một miniapp mẫu demo **toàn bộ Bridge API (jsAPI)**.
+
+Clone repo sample code về máy:
+
+```bash title="Terminal"
+git clone https://github.com/mahou-anisphia/miniapp-sample-code.git
+```
+
+Di chuyển vào thư mục project:
+
+```bash title="Terminal"
+cd miniapp-sample-code
+```
+
+Cài đặt dependencies:
+
+```bash title="Terminal"
+npm install
+```
+
+Sau đó chạy preview theo hướng dẫn ở [Phát triển Miniapp](./phat_trien_miniapp).
+
+:::caution API đặc biệt
+`getAuthCode` là API riêng của Tammi Superapp, **không hoạt động** ở chế độ local preview. API này chỉ hoạt động sau khi deploy lên nền tảng Tammi.
+:::
+
+## Lựa chọn phát triển
+
+| Lựa chọn                   | Mô tả                                     | Bắt đầu                              |
+| -------------------------- | ----------------------------------------- | ------------------------------------ |
+| **Xây mới từ boilerplate** | Phát triển miniapp với đầy đủ Bridge API  | Tiếp tục từ boilerplate đã clone     |
+| **Tích hợp SPA có sẵn**    | Đưa web app hiện tại lên nền tảng miniapp | [Hướng dẫn tích hợp](./tich_hop_spa) |
+
+## Tài liệu tham khảo
+
+| Tài liệu                                               | Mô tả                    |
+| ------------------------------------------------------ | ------------------------ |
+| [Tài liệu jsAPI](../jsapi/)                            | Chi tiết từng Bridge API |
+| [Giải pháp mẫu](../gioi_thieu/vi_du)                   | Sample code và demo      |
+| [Câu hỏi thường gặp](../gioi_thieu/cau_hoi_thuong_gap) | FAQ về miniapp           |
+
+<HoTro />

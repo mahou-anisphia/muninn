@@ -62,8 +62,20 @@ sequenceDiagram
     Bridge-->>MiniApp: Callback với data
 ```
 
-*Hình 1: Luồng giao tiếp giữa MiniApp và Native App thông qua JS Bridge*
+_Hình 1: Luồng giao tiếp giữa MiniApp và Native App thông qua JS Bridge_
 
 </div>
 
 Nền tảng cung cấp nhiều thư viện và API để lựa chọn, tùy thuộc vào nhu cầu của ứng dụng. Bạn có thể xây dựng một miniapp đơn giản chỉ với logic nghiệp vụ cơ bản, hoặc tận dụng Bridge API để truy cập các tính năng native như camera, GPS - mang lại trải nghiệm tương tự native app.
+
+## Bắt đầu phát triển
+
+Sẵn sàng xây dựng miniapp? Chọn phương thức phù hợp với bạn:
+
+| Phương thức                                                  | Mô tả                                        |
+| ------------------------------------------------------------ | -------------------------------------------- |
+| [**A. Xây mới**](/getting_started/A_xay_moi/index)           | Phát triển miniapp từ đầu - linh hoạt nhất   |
+| [**B. Chuyển đổi SPA**](/getting_started/B_chuyen_doi/index) | Chuyển đổi ứng dụng React/Vue/Angular có sẵn |
+| [**C. Tích hợp Webview**](/getting_started/C_webview/index)  | Nhúng website có sẵn vào miniapp             |
+
+[Xem chi tiết tại Getting Started](/getting_started/index)

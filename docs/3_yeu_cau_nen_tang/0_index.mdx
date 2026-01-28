@@ -1,0 +1,79 @@
+---
+sidebar_position: 0
+id: index
+---
+
+# Yêu cầu nền tảng
+
+Sau khi miniapp hoạt động và tuân thủ các tiêu chí kỹ thuật, miniapp cần đáp ứng thêm các yêu cầu nền tảng dưới đây để được phê duyệt lên Tammi Superapp.
+
+## 1. Navigation Bar
+
+Viettel cung cấp sẵn một **Navigation Bar mặc định** cho tất cả miniapp. Đây là yêu cầu bắt buộc để đảm bảo trải nghiệm nhất quán trên toàn bộ nền tảng.
+
+<img src={require('./img/miniapp_navigation_bar.jpg').default} alt="Navigation bar bắt buộc" style={{maxWidth: '400px'}} />
+
+### Quy định
+
+**Cho phép:**
+
+- Thay đổi màu nền
+- Thay đổi màu chữ/icon
+- Tùy chỉnh tiêu đề
+
+**Không cho phép:**
+
+- Ẩn Navigation Bar
+- Ẩn nút quay lại (←)
+- Ẩn nút đóng (✕)
+- Thay thế bằng Navigation Bar tự thiết kế
+
+:::warning Lưu ý
+Nếu miniapp của bạn cần tùy chỉnh Navigation Bar ngoài các quy định trên, vui lòng liên hệ Viettel để được xem xét.
+:::
+
+## 2. Quyền hạn (Permissions)
+
+Miniapp được phân loại theo hai cấp độ quyền hạn:
+
+| Loại                    | Mô tả                                         | Phê duyệt                  |
+| ----------------------- | --------------------------------------------- | -------------------------- |
+| **Ordinary Permission** | Quyền cơ bản, không yêu cầu xác thực đặc biệt | Tự động                    |
+| **Special Permission**  | Quyền nâng cao, truy cập dữ liệu nhạy cảm     | Yêu cầu phê duyệt đặc biệt |
+
+:::danger Yêu cầu bắt buộc
+**TOÀN BỘ miniapp** phải được tạo với **Ordinary Permission**.
+
+Miniapp sử dụng Special Permission sẽ **không được chấp thuận** trừ khi có thỏa thuận riêng với Viettel.
+:::
+
+### Ordinary Permission bao gồm
+
+- Truy cập thông tin người dùng cơ bản (tên, avatar)
+- Sử dụng Bridge API tiêu chuẩn
+- Lưu trữ dữ liệu local (storage)
+- Gọi API bên ngoài từ miniapp
+
+## 3. Logo và thương hiệu
+
+Vì miniapp được quản lý và hiển thị trên ứng dụng Tammi của Viettel, tất cả các yếu tố thương hiệu đều phải được kiểm duyệt, và phải phù hợp với thương hiệu Viettel.
+
+### Yêu cầu logo
+
+| Tiêu chí       | Yêu cầu                                                    |
+| -------------- | ---------------------------------------------------------- |
+| **Kích thước** | Tối thiểu 512x512 px                                       |
+| **Định dạng**  | PNG hoặc SVG (nền trong suốt)                              |
+| **Nội dung**   | Không vi phạm bản quyền, không chứa nội dung không phù hợp |
+| **Chất lượng** | Rõ nét, không bị mờ hoặc vỡ pixel                          |
+
+### Quy trình phê duyệt
+
+1. Gửi logo kèm theo thông tin miniapp
+2. Viettel kiểm duyệt nội dung và chất lượng
+3. Phản hồi trong vòng **1-2 ngày làm việc**
+4. Nếu cần chỉnh sửa, gửi lại và chờ phê duyệt mới
+
+:::info Liên hệ
+Để gửi logo hoặc thắc mắc về quy trình phê duyệt, vui lòng liên hệ đội ngũ hỗ trợ Viettel qua email hoặc kênh hỗ trợ chính thức.
+:::

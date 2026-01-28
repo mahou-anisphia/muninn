@@ -1,0 +1,8 @@
+{
+  "label": "Xác thực SSO Viettel",
+  "position": 4,
+  "link": {
+    "type": "doc",
+    "id": "sso_auth/index"
+  }
+}

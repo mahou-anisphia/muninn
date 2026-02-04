@@ -1,8 +1,8 @@
 {
-    "label": "Mô tả jsAPI",
-    "position": 5,
-    "link": {
-        "type": "doc",
-        "id": "jsapi/index"
-    }
+  "label": "jsAPI",
+  "position": 5,
+  "link": {
+    "type": "doc",
+    "id": "jsapi/index"
+  }
 }

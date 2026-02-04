@@ -1,0 +1,8 @@
+{
+  "label": "B. Auth & User",
+  "position": 3,
+  "link": {
+    "type": "doc",
+    "id": "jsapi/B_auth_user/index"
+  }
+}
